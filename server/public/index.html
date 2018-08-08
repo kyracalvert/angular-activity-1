@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="vendors/angular.min.js"></script>
+    <script src="scripts/client.js"></script>
+    <title>Kyra's First Angular Challenge</title>
+</head>
+<body ng-app="FoodApp">
+    <h1>Kyra's First Angular Challenge</h1>
+    <div ng-controller="FoodController as fc">
+        Food is: <input placeholder="food type" type="text" ng-model="fc.foodIn">
+        <button ng-click="fc.addFood()">Add food</button>
+        <p>{{fc.foodLog}}</p>
+    </div>
+   
+    
+</body>
+</html>
